@@ -25,11 +25,11 @@ export function useAddBook(){
 
     //form state for add book
     const form = reactive ({
-    title: '',
-    author: '',
-    genre: '',
-    description: '',
-    status: 'Want to Read', // Set default status first
+        title: '',
+        author: '',
+        genre: '',
+        description: '',
+        status: 'Want to Read', // Set default status first
     });
 
     // Option for the status dropdown
@@ -37,24 +37,28 @@ export function useAddBook(){
 
     //for submit handler to add new book
     const handleSubmit = async () => {
-    const isValid = await formRef.value?.validate();
-    if (!isValid) return;
     
-    const newBook = {
-        title : form.title,
-        author : form.author,
-        genre : form.genre,
-        description : form.description,
-        status : form.status,
-    }
+        const isValid = await formRef.value?.validate();
+        if (!isValid?.valid) {
+            toast.error('Please fill all required fields');
+            return;
+        }
 
-    try {
-        const response = await axios.post('/api/books', form);
-        toast.success('Book Added Successfully');
-        router.push(`/books/${response.data.id}`);
-        } catch (error) {
-        console.error('Error add book', error);
-        toast.error('Book Was Not Added');
+        const newBook = {
+            title : form.title,
+            author : form.author,
+            genre : form.genre,
+            description : form.description,
+            status : form.status,
+        }
+
+        try {
+            const response = await axios.post('/api/books', form);
+            toast.success('Book Added Successfully');
+            router.push(`/books/${response.data.id}`);
+            } catch (error) {
+            console.error('Error add book', error);
+            toast.error('Book Was Not Added');
         }
     };
 
@@ -84,11 +88,11 @@ export function useUpdateBook(){
     };
 
     const form = reactive({
-    title: '',
-    author: '',
-    genre: '',
-    description: '',
-    status: '',
+        title: '',
+        author: '',
+        genre: '',
+        description: '',
+        status: '',
     });
 
     const state = reactive({
