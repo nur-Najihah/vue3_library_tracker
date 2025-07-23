@@ -1,44 +1,6 @@
 <script setup lang="ts">
 import {useAddBook} from '../composable/useBook';
-
 import { ref} from 'vue';
-/*import type { Book } from '../interface/Book'; 
-import { useRouter } from 'vue-router'; 
-import { useToast } from 'vue-toastification'; 
-import axios from 'axios'; 
-
-const router = useRouter(); 
-const toast = useToast();   
-
-const form = reactive ({
-  title: '',
-  author: '',
-  genre: '',
-  description: '',
-  status: 'Want to Read', // Set default status first
-});
-
-// Options for the status dropdown
-const statusOptions = ['Reading', 'Completed', 'Want to Read'];
-
-const handleSubmit = async () => {
-  const newBook = {
-    title : form.title,
-    author : form.author,
-    genre : form.genre,
-    description : form.description,
-    status : form.status,
-  }
-
-  try {
-      const response = await axios.post('/api/books', form);
-      toast.success('Book Updated Successfully');
-      router.push(`/books/${response.data.id}`);
-    } catch (error) {
-      console.error('Error add book', error);
-      toast.error('Book Was Not Added');
-    }
-};*/
 
 const { form, formRef, rules, statusOptions, handleSubmit } = useAddBook();
 </script>
@@ -54,7 +16,6 @@ const { form, formRef, rules, statusOptions, handleSubmit } = useAddBook();
             v-model="form.title"
             label="Book Title"
             :rules="rules.title"
-            required
             class="mb-4"
             prepend-icon="mdi-book-open-blank-variant"
           />
@@ -63,7 +24,6 @@ const { form, formRef, rules, statusOptions, handleSubmit } = useAddBook();
             v-model="form.author"
             label="Author"
             :rules="rules.author"
-            required
             class="mb-4"
             prepend-icon="mdi-account"
           />
@@ -71,7 +31,6 @@ const { form, formRef, rules, statusOptions, handleSubmit } = useAddBook();
           <v-text-field
             v-model="form.genre"
             label="Genre"
-            required
             class="mb-4"
             prepend-icon="mdi-tag-multiple"
           />
@@ -80,7 +39,6 @@ const { form, formRef, rules, statusOptions, handleSubmit } = useAddBook();
             v-model="form.description"
             label="Description"
             :rules="rules.description"
-            required
             rows="3"
             class="mb-4"
             prepend-icon="mdi-script-text-outline"
@@ -91,7 +49,6 @@ const { form, formRef, rules, statusOptions, handleSubmit } = useAddBook();
             :items="statusOptions"
             label="Status"
             :rules="rules.status"
-            required
             class="mb-4"
             prepend-icon="mdi-bookmark"
           />
