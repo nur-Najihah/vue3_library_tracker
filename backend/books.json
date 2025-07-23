@@ -1,0 +1,92 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "description": "A witty and romantic novel following Elizabeth Bennet and Mr. Darcy as they overcome pride and prejudices of early 19th‑century society to find love.",
+      "status": "Completed"
+    },
+    {
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "genre": "Personal Development",
+      "description": "A practical guide for creating good habits and breaking bad ones through small, incremental changes and system-based thinking.",
+      "status": "Want to Read",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "title": "The Power of Your Subconscious Mind",
+      "author": "Joseph Murphy",
+      "genre": "Personal Development, Self help",
+      "description": "Explores how harnessing the power of your subconscious mind can transform your life, health, and success through mental programming and belief.",
+      "status": "Completed"
+    },
+    {
+      "id": "4",
+      "title": "Little Women",
+      "author": "Louisa May Alcott",
+      "genre": "Historical Fiction",
+      "description": "The classic coming-of-age story of the March sisters—Meg, Jo, Beth, and Amy—as they grow up during the American Civil War.",
+      "status": "Reading"
+    },
+    {
+      "id": "5",
+      "title": "The Lord of The Rings",
+      "author": "John Ronald Reuel Tolkien",
+      "genre": "Adventure, Fantasy",
+      "description": "An epic high-fantasy tale of Frodo Baggins’s quest to destroy the One Ring and vanquish the Dark Lord Sauron in Middle-earth.",
+      "status": "Reading"
+    },
+    {
+      "id": "6",
+      "title": "Harry Potter chapter 1",
+      "author": "J. K. Rowling",
+      "genre": "Fantasy",
+      "description": "Follows young wizard Harry Potter as he attends Hogwarts School, battles dark forces, and discovers his destiny.",
+      "status": "Reading"
+    },
+    {
+      "id": "7",
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "genre": "History",
+      "description": "A sweeping exploration of human history from hunter-gatherers to modern societies, examining the impacts of science, culture, and economics.",
+      "status": "Want to Read"
+    },
+    {
+      "id": "8",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Classic Literature, Thriller",
+      "description": "Set in the Deep South, young Scout Finch witnesses her father defend a black man accused of rape, confronting racial injustice and moral growth.",
+      "status": "Want to Read"
+    },
+    {
+      "id": "9",
+      "title": "The Lean Startup",
+      "author": "Eric Ries",
+      "genre": "Business, Non-fiction",
+      "description": "Introduces a systematic method for building startups and launching scalable businesses through continuous innovation and validated learning. The Lean Startup defines a scientific methodology for running startups and launching new products. This new approach has been adopted around the world within startups and established organisations. Regardless of your role or company size, this is a must read for entrepreneurs, marketers, developers and business leaders.",
+      "status": "Want to Read"
+    },
+    {
+      "title": "The Art of Letting God ",
+      "author": "Mizi Wahid",
+      "genre": "Motivation, religion, Personal Development, self help",
+      "description": "Do you feel overwhelmed right now with all the pressures and uncertainties of life? Does the thought of your past failures, failed relationships and negative labels drag you down? Have you ever wished that you could just leave everything behind and start fresh? Are u ready to finally let go, move on and live a happy and joyful life? If you keep bringing negative baggage from yesterday, it will eventually poison your future. You may have had an unfair past, but the truth is, you don’t need to have an unfair future. You may have had a rough start in your marriage, your business, your career – but it’s not how you start that matters most, it’s how you finish. Let us begin the exploration of your journey towards “surrendering” in this book. And may we all find the strength to let go, the capacity to forgive, and the faith to move on.",
+      "status": "Completed",
+      "id": "10"
+    },
+    {
+      "title": "48 laws of power",
+      "author": "Robert",
+      "genre": "self help, development",
+      "description": "test",
+      "status": "Completed",
+      "id": "11"
+    }
+  ]
+}

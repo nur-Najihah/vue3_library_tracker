@@ -1,0 +1,47 @@
+/* frontend/src/assets/main.css */
+
+@import './base.css';
+
+/* Global font imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* #app is now the root of your Vuetify app. Vuetify handles its internal flex/layout */
+#app {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh; /* Ensure it takes full height, if not handled by v-app */
+  max-width: 1280px; /* Still to constrain the content width */
+  margin: 0 auto;    /* Still to center the content horizontally */
+  padding: 0; /* Vuetify components add their own padding, so remove root padding */
+}
+
+/* Remove or simplify these if v-app/v-main/v-footer handle them better */
+.app-main-content {
+  /* `v-main` often handles flex-grow automatically. Adjust padding here if needed. */
+  /* flex-grow: 1; */ 
+  padding: 2rem 0; /* Standard vertical padding for content */
+}
+
+.app-footer {
+  /* background-color: #333; */
+  /* color: white; */
+  text-align: center;
+  padding: 1rem;
+  /* margin-top: auto; */
+}
+
+/* Base body styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ac6161;
+}
+
+/* Other global styles like 'a' and '.green' can remain */
+a {
+  text-decoration: none;
+  color: #293f6d;
+  transition: 0.3s;
+}
+a:hover {
+  filter: brightness(1.2);
+}
