@@ -1,45 +1,69 @@
-# LIBRARY_TRACKER
+# Personal Library Tracker
 
-This template should help get you started developing with Vue 3 in Vite.
+This **Library Tracker** is a simple web application for managing a personal library. Users can add, view, update, and delete books, keeping track of their reading status. Meanwhile, user can search books by title, author, or genre. 
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+<img width="1920" height="1414" alt="image" src="https://github.com/user-attachments/assets/c11ee3ad-ffec-4ee5-852e-683947df819b" />
 
-## Type Support for `.vue` Imports in TS
+## Features
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- ✅ Add, edit, delete books
+- ✅ Search by title, author, or genre
+- ✅ Responsive interface with Vuetify
+- ✅ RESTful backend using JSON Server
+- ✅ Dockerized for easy deployment
+- ✅ API requests proxied with Nginx
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Functional Features
 
-## Project Setup
+1. **Create a book**
+   - Fields: `title`, `author`, `genre`, `description`, `status` 
+     <img width="1920" height="1267" alt="image" src="https://github.com/user-attachments/assets/6b447747-2a9c-4202-af44-11ef072f230b" />
 
-```sh
-npm install
-```
+2. **Read the book list**
+   - View all books in a responsive card layout
+     <img width="1920" height="1729" alt="image" src="https://github.com/user-attachments/assets/5b3d02b2-f688-4ecc-9f12-640ebd8124f2" />
 
-### Compile and Hot-Reload for Development
+3. **Update a book's details and Delete a book**
+   - Modify existing book info including title, author, genre, description and status. Also remove a book entry from the collection
+     <img width="1920" height="1369" alt="image" src="https://github.com/user-attachments/assets/c9127938-576d-4841-bd88-db5596074881" />
 
-```sh
-npm run dev
-```
+---
 
-### Type-Check, Compile and Minify for Production
+## Tech Stack
+- **Frontend**: Vue 3, Vue Router, Vuetify
+- **Backend**: JSON Server
+- **Dev Tools**: Vite, Axios, Toastification
+- **Containerization**: Docker & Docker Compose
+- **Web Server**: Nginx
 
-```sh
-npm run build
-```
+## Installation & Setup
+Follow these steps to get the Library Tracker application up and running on your local machine.
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Prerequisites
+Ensure you have the following installed on your system:
 
-```sh
-npm run test:unit
-```
+* **Node.js** 
+* **npm**
+* **Docker Desktop**: Includes Docker Engine and Docker Compose
 
-### Lint with [ESLint](https://eslint.org/)
+### Setup Steps
+1.  **Clone the Repository:**
+    Start by cloning the project from Git repository:
 
-```sh
-npm run lint
+      ```bash
+      git clone <repository-url>
+      ```
+2.  **Build Docker**
+     ```bash
+     docker-compose up --build
+     ```
+
+### Stopping the Application
+To stop all running Docker containers for this project:
+```bash
+docker-compose down
 ```
