@@ -4,12 +4,15 @@ import Navbar from '@/components/Navbar.vue';
 </script>
 
 <template>
-  <div id="app"> <v-app> <Navbar /> 
+  <div id="app"> 
+    <v-app> <Navbar /> 
 
-      <v-main class="app-main-content"> <RouterView /> 
+      <v-main class="app-main-content"> 
+          <RouterView/>
       </v-main>
-
-      <v-footer class="app-footer"> <p></p>
+      <v-footer app class="text-center"> 
+        <span class="text-caption">© 2025 My Personal Library Tracker</span>
       </v-footer>
-    </v-app> </div>
+    </v-app> 
+  </div>
 </template>
