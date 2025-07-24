@@ -51,12 +51,9 @@ Ensure you have the following installed on your system:
 * **Docker Desktop**: Includes Docker Engine and Docker Compose
 
 ### Setup Steps
-1.  **Clone the Repository:**
-    Start by cloning the project from Git repository:
+1.  **Clone the Repository or Download zip file:**
+    Start by cloning the project from Git repository or can just download the zip file and open it from VSCode.
 
-      ```bash
-      git clone <repository-url>
-      ```
 2.  **Build Docker**
      ```bash
      docker-compose up --build
