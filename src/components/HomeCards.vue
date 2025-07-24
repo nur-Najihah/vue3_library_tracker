@@ -32,7 +32,7 @@ onMounted(async () => {
 <template>
   <div  class ="bg-indigo-lighten-4">
     <Library/>
-    <v-container class="py-16 mb-3"> 
+    <v-container fluid> 
       <h2 class="text-h5 font-weight-bold  text-center mb-6">Your Reading Journey</h2>
 
       <div v-if="isLoadingStats" class="text-center-4">
@@ -101,4 +101,3 @@ onMounted(async () => {
     </v-container>
   </div>
 </template>
-
